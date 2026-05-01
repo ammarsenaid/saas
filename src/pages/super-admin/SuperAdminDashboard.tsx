@@ -1,3 +1,3 @@
-import { PageHeader, StatCard } from '../../components/ui/primitives';
+import { PageHeader, Section, StatCard } from '../../components/ui/primitives';
 
-export const SuperAdminDashboard = () => <div className='space-y-4'><PageHeader title='Super Admin Dashboard' description='Mandantenverwaltung und System-Administration folgen später.'/><div className='grid gap-4 md:grid-cols-3'><StatCard label='Mandanten' value='12'/><StatCard label='Systemstatus' value='Stabil'/><StatCard label='Abrechnung' value='Platzhalter'/></div></div>;
+export const SuperAdminDashboard = () => <div className='space-y-4'><PageHeader title='Super Admin Dashboard' description='Mandantenverwaltung und System-Administration folgen später.'/><div className='grid gap-4 md:grid-cols-4'><StatCard label='Mandanten' value='12'/><StatCard label='Systemstatus' value='Stabil'/><StatCard label='Abrechnung' value='Platzhalter'/><StatCard label='Support / Audit' value='Platzhalter'/></div><Section title='Hinweis'><p className='text-sm text-slate-600'>Alle Aktionen sind Platzhalter und nicht bearbeitbar.</p></Section></div>;
